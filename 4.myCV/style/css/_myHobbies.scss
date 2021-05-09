@@ -1,0 +1,47 @@
+.myHobbies {
+    margin: auto;
+    width: 90%;
+    display: none;
+    .hobby {
+        width: 100%;
+        @include flexDirection(column, center);
+        .hobby__box {
+            width: 90%;
+            height: 150px;
+            margin-top: 10px;
+            .hobby__box--2 {
+                margin: auto;
+                text-align: center !important;
+                font-size: 40px;
+            }
+        }
+
+        @media(min-width: 768px) {
+            & {
+                display: block;
+                width: 100%;
+                display: grid;
+                grid-template-columns: repeat(3, 1fr);
+                grid-template-rows: repeat(3, 200px);
+                gap: 0px;
+                .hobby__box {
+                    margin: auto;
+                    @include bgImage;
+                }
+            }
+        }
+        @media(min-width: 1024px) {
+            & {
+                width: 100%;
+                display: grid;
+                grid-template-columns: repeat(3, 1fr);
+                grid-template-rows: repeat(3, 300px);
+                gap: 0px;
+                .hobby__box {
+                    margin: auto;
+                    @include bgImage;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mrs+Saint+Delafield&family=Noto+Sans+JP:wght@100&display=swap');
+@import './css/mixin';
+@import './css/variable';
+@import './css/reset';
+@import './css/header';
+@import './css/container';
+@import './css/language';
+@import './css/mySkill';
+@import './css/footer';
+body {
+    margin: auto;
+    @include bgImage;
+}

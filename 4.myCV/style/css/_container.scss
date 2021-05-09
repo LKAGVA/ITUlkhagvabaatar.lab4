@@ -1,0 +1,321 @@
+.container {
+    width: 100%;
+    color: $white;
+    .first {
+        width: 100%;
+        
+        .scrol {
+            width: 25vh;
+            position: relative;
+            margin-top: .5rem;
+            top: 32%;
+            left: 15%;
+            summary {
+                @include heading(14px, 100);
+                padding-bottom: 0;
+            }
+            hr {
+                width: 3rem;
+            }
+            p {
+                font-size: 10px !important;
+                font-weight: 100;
+                padding: .4rem 0;
+            }
+            
+            table {
+                width: 30vh;
+                font-size: 9px;
+                font-weight: 100;
+                list-style: none;
+            }
+            
+            @media(min-width: 400px) {
+                width: 65%;
+                font-size: 12px;
+                p {
+                    width: 80%;
+                    font-size: 13px !important;
+                }
+                table {
+                    width: 40vh;
+                    font-size: 13px;
+                    font-family: 'Noto Sans JP', sans-serif;
+                    margin: 5px 0;
+                }            
+            }
+            @media(min-width: 568px) {
+                & {
+                    width: 55%;
+                    font-size: 16px;
+                    top: 0%;
+                    summary {
+                        @include heading(16px, 100);
+                        padding-bottom: 0;
+                    }
+                    p {
+                        width: 80%;
+                        font-size: 14px !important;
+                    }
+                    table {
+                        width: 90%;
+                        font-size: 14px;
+                        font-family: 'Noto Sans JP', sans-serif;
+                        margin: 5px;
+                    }            
+            
+                }
+            }
+
+            @media(min-width: 720px) {
+                & {
+                    width: 65%;
+                    font-size: 18px;
+                    top: 0%;
+                    summary {
+                        @include heading(18px, 100);
+                        padding-bottom: 0;
+                    }
+                    p {
+                        width: 80%;
+                        font-size: 14px !important;
+                    }
+                    table {
+                        width: 90%;
+                        font-size: 16px;
+                        font-family: 'Noto Sans JP', sans-serif;
+                        margin: 5px;
+                    }            
+                }
+            }
+            
+        }
+    
+        .experience {
+            width: 90%;
+            margin-top: 5vh;
+            margin: auto;
+            h3 {
+                @include heading(14px, 100);
+                text-align: start;
+            }
+            .headers::first-letter { 
+                float: left;
+                margin-top: 0;
+                padding: 0 10px;
+                font-size: 4em;                
+                font-weight: 300;
+            }
+            hr {
+                padding-left: 60px;
+            }
+            p {
+                font-size: 10px;
+                font-weight: 100;
+                padding-top: 3px;
+            }
+            .exper_img {
+                display: none;
+                max-width: 100%;
+                height: 70vh;
+                border: none;
+                margin-top: 15px;
+                @include bgImage;
+                .caption {
+                    width: 100%;
+                    height: 100%;
+                    background: -webkit-gradient(linear,left top,left bottom,color-stop(0,rgba(0,0,0,0)),to(rgba(0,0,0,.8)));
+                    background: linear-gradient(180deg,rgba(0,0,0,0) 0,rgba(0,0,0,.8) 100%);
+                }
+                @media(min-width: 1100px) {
+                    & {
+                        display: block;
+                    }
+                }
+            } 
+            @media(min-width: 568px) {
+                & {
+                    width: 90%;
+                    margin: 5.5vh;
+                    p {
+                        padding-top: 5px;
+                        transition: .3s;
+                        font-size: 14px;
+                        transition: .3s;
+                        cursor: pointer;
+                        &:hover {
+                            font-size: 16px;
+                        }
+                    }
+                }
+                
+            } 
+        }
+    
+        @media(min-width: 736px) {
+            & {
+                width: 100%;
+                margin: 5.5vh;
+                height: 50vh;
+                background: linear-gradient(180deg,rgba(0,0,0,0) 0,rgba(0,0,0,.8) 100%);                
+                @include bgImage;
+            }
+        }
+
+    
+        @media(min-width: 1100px) {
+            & {
+                width: 90%;
+                font-size: 18px;
+                top: 0%;
+                summary {
+                    @include heading(18px, 100);
+                    padding-bottom: 0;
+                }
+                p {
+                    width: 80%;
+                    font-size: 14px !important;
+                }
+                table {
+                    width: 90%;
+                    font-size: 16px;
+                    font-family: 'Noto Sans JP', sans-serif;
+                    margin: 5px;
+                }   
+
+                .experience {
+                    width: 90%;
+                    margin-top: 10vh;
+                    h3 {
+                        @include heading(16px, 100);
+                        text-align: start;
+                    }
+                    p {
+                        font-size: 16px;
+                        font-weight: 100;
+                        padding-top: 5px;
+                    }
+                }         
+    
+            }
+        }
+    }
+    
+    
+
+    .hobbies {
+        width: 90%;
+        margin: auto;
+        padding-top: 5.5vh;
+        h3 {
+            @include heading(14px, 100);
+            text-align: center;
+        }
+        hr {
+            width: 1rem;
+            margin-bottom: 1rem;
+        }
+        .container {
+            width: 90%;
+            padding: .3rem 0;
+            @include flexDirection(row, space-between);
+            .container__box {
+                width: 20%;
+                height: 80px;
+                border-radius: 15px 45px 10px 40px;
+                .caption {
+                    display: none;
+                    width: 100%;
+                    height: 100%;
+                    background: -webkit-gradient(linear,left top,left bottom,color-stop(0,rgba(0,0,0,0)),to(rgba(0,0,0,.8)));
+                    background: linear-gradient(180deg,rgba(0,0,0,0) 0,rgba(0,0,0,.8) 100%);
+
+                }
+                &--1 {
+                    background-image: url(https://theatreofdreams.ru/wp-content/uploads/ronaldo-v-kakoj-komande-igraet_7.jpg);
+                    @include bgImage;
+                }   
+                &--2 {
+                    background-image: url(https://cdn.nba.com/manage/2021/04/wiseman-dunk-1.jpg);
+                    @include bgImage;
+                }        
+                &--3 {
+                    background-image: url(https://incompliancemag.com/wp-content/uploads/2018/09/Microchip.jpg);
+                    @include bgImage;
+                }   
+                &--4 {
+                    background-image: url(https://i.pinimg.com/564x/0d/43/23/0d4323b8a971bf9a960da6e46a2599b6.jpg);
+                    @include bgImage;
+                }   
+            }
+        }
+        @media(min-width: 400px) {
+            & {
+                width: 90%;
+                .container {
+                    width: 100%;
+                    .container__box {
+                        width: 23%;
+                        height: 150px;
+                        border-radius: 20% 20% 10% 15%;
+                        &:hover {
+                            width: 24%;
+                            height: 180px;
+                            cursor: pointer;
+                            transition: .3s;
+                            .caption {
+                                display: block;
+                            }
+                        }
+                    }        
+                }
+            }
+        }
+
+        @media(min-width: 615px) {
+            & {
+                width: 90%;
+                .container {
+                    width: 100%;
+                    .container__box {
+                        width: 23%;
+                        height: 180px;
+                        border-radius: 20%;
+                        &:hover {
+                            width: 24%;
+                            height: 200px;
+                            cursor: pointer;
+                            transition: .3s;
+                            .caption {
+                                display: block;
+                            }
+                        }
+                    }        
+                }
+            }
+        }
+        @media(min-width: 1100px) {
+            & {
+                width: 90%;
+                .container {
+                    width: 100%;
+                    .container__box {
+                        width: 23%;
+                        height: 250px;
+                        border-radius: 5%;
+                        &:hover {
+                            width: 24%;
+                            height: 280px;
+                            cursor: pointer;
+                            transition: .3s;
+                            .caption {
+                                display: block;
+                            }
+                        }
+                    }        
+                }
+            }
+        }
+
+    }
+}

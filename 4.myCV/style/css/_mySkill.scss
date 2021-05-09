@@ -1,0 +1,206 @@
+.skill {
+    width: 90%;
+    a {
+        h4 {
+            text-align: center;
+            @include heading(14px, 100);
+        }
+    }
+    
+    hr {
+        width: 1rem;
+    }
+    .mySkill {
+        width: 100%;
+    
+    
+        .skill_1{
+            padding: 0 1rem;
+        
+            .skill_header {
+                @include heading(10px, 100);
+                margin-left: 1rem;
+            }
+        }
+        .pie,
+        .myskill_chart .busad {
+            position: absolute;
+            border: 0.08em solid $white;
+            width: 0.84em;
+            height: 0.84em;
+            clip: rect(0em, .5em, .5em, 0em);
+            border-radius: 50%;
+            transform: rotate(0deg);
+        }
+        .myskill_chart {
+            position: relative;
+            font-size: 50px;
+            width: 1em;
+            height: 1em;
+            border-radius: 50%;
+            float: left;
+            margin: 0 0.1em 0.1em 0;
+            background-color: $yellow;
+            margin-left: 10%;
+        }
+        .myskill_chart>span {
+            position: absolute;
+            width: 100%;
+            z-index: 1;
+            left: 0;
+            top: 0;
+            width: 5em;
+            line-height: 5em;
+            font-size: 0.2em;
+            color: $yellowBG;
+            display: block;
+            text-align: center;
+            white-space: nowrap;
+            transition-property: all;
+            transition-duration: 0.2s;
+            transition-timing-function: ease-out;
+            &:hover {
+                color: $yellow;
+            }
+        }
+        .myskill_chart:after {
+            position: absolute;
+            top: 0.08em;
+            left: 0.08em;
+            display: block;
+            content: " ";
+            border-radius: 50%;
+            background-color: black;
+            width: 0.84em;
+            height: 0.84em;
+            transition-property: all;
+            transition-duration: 0.2s;
+            transition-timing-function: ease-in;
+        }
+        .myskill_chart .chart {
+            position: absolute;
+            width: 1em;
+            height: 1em;
+            clip: rect(0em, 1em, 1em, 0.5em);
+        }
+        .myskill_chart.solih .busad {
+            transform: rotate(70deg);
+        }
+         
+    }
+
+    @media(min-width: 400px) {
+        a {
+            h3 {
+                @include heading(15px, 300);
+            }
+        }
+        
+    }
+    @media(min-width: 600px) {
+        & {
+            width: 50%;
+            display: flex;
+            flex-direction: row-reverse;
+            justify-content: flex-end;
+            a {
+                h4 {
+                    @include heading(16px, 100);
+                }
+            }
+            
+            
+            .mySkill {
+                .skill_1 {
+                    margin: 1rem 0;
+                }
+                .pie,
+                .myskill_chart .busad {
+                    position: absolute;
+                    border: 0.08em solid $white;
+                    width: 0.84em;
+                    height: 0.84em;
+                    clip: rect(0em, .5em, .5em, 0em);
+                    border-radius: 50%;
+                    transform: rotate(0deg);
+                }
+                .myskill_chart {
+                    position: relative;
+                    font-size: 80px;
+                    width: 1em;
+                    height: 1em;
+                    border-radius: 50%;
+                    float: left;
+                    margin: 0 0.1em 0.1em 0;
+                    background-color: $yellow;
+                    margin-left: 10%;
+                }
+                .myskill_chart>span {
+                    position: absolute;
+                    width: 100%;
+                    z-index: 1;
+                    left: 0;
+                    top: 0;
+                    width: 5em;
+                    line-height: 5em;
+                    font-size: 0.2em;
+                    color: $yellowBG;
+                    display: block;
+                    text-align: center;
+                    white-space: nowrap;
+                    transition-property: all;
+                    transition-duration: 0.2s;
+                    transition-timing-function: ease-out;
+                    &:hover {
+                        color: $yellow;
+                    }
+                }
+                .myskill_chart:after {
+                    position: absolute;
+                    top: 0.08em;
+                    left: 0.08em;
+                    display: block;
+                    content: " ";
+                    border-radius: 50%;
+                    background-color: black;
+                    width: 0.84em;
+                    height: 0.84em;
+                    transition-property: all;
+                    transition-duration: 0.2s;
+                    transition-timing-function: ease-in;
+                }
+                .myskill_chart .chart {
+                    position: absolute;
+                    width: 1em;
+                    height: 1em;
+                    clip: rect(0em, 1em, 1em, 0.5em);
+                }
+                .myskill_chart.solih .busad {
+                    transform: rotate(70deg);
+                }
+            }
+        }
+    }
+    @media(min-width: 1100px) {
+        & {
+            width: 70%;
+            
+            .mySkill {
+                width: 40%;
+                height: 30vh;
+                a {
+                    h4 {
+                        @include heading(16px, 100);
+                    }
+                }
+                
+                .skill_1 {
+                    margin: 2rem 0;
+                }
+      
+            }
+    
+        }
+
+    }
+}

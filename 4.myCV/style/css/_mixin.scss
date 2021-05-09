@@ -1,0 +1,25 @@
+@mixin flexDirection($direction, $justify) {
+    display: flex;
+    flex-direction: $direction;
+    justify-content: $justify;
+    align-items: center;
+}
+@mixin flexAlign($direction, $align) {
+    display: flex;
+    flex-direction: $direction;
+    justify-content: flex-start;
+    align-items: $align;
+}
+@mixin heading($font, $weight) {
+    text-transform: uppercase;
+    font-size: $font;
+    font-weight: $weight;
+    padding: .5rem 0;
+}
+@mixin bgImage {
+    width: 100%;
+    overflow: hidden;
+    background-position: center center;
+    background-repeat: no-repeat, repeat;
+    background-size: cover;
+}
