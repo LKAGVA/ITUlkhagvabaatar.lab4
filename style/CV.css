@@ -115,7 +115,7 @@ img {
 @media (min-width: 400px) {
   .header {
     height: 30vh;
-    background-image: url(./../../image/bac_robVShuman.PNG);
+    background-image: url(https://luxai.com/wp-content/uploads/2021/03/QTrobot-expressive-humanoid-robot-for-social-robotics-research.jpg);
     width: 100%;
     overflow: hidden;
     background-position: center center;

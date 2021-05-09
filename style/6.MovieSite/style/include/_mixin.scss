@@ -1,0 +1,11 @@
+@mixin flexItems($direction, $justify) {
+    display: flex;
+    flex-direction: $direction;
+    align-items: center;
+    justify-content: $justify;
+}
+@mixin bgRepeat {
+    overflow: hidden;
+    background-repeat: no-repeat;
+    background-size: cover;
+}

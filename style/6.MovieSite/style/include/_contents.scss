@@ -1,0 +1,46 @@
+.contents {
+    position: absolute;  
+    width: 100%;
+    top: 82%;
+    .row {
+        width: 95%;
+        margin: auto;
+        color: $white;
+        &__title {
+            margin-bottom: .6rem;    
+            margin-left: 1.5rem;        
+        }
+        &__contents {
+            width: 100%;
+            @include flexItems(row, space-between);
+            margin-bottom: 2rem;
+            .box {
+              width: 20%;
+              height: 350px;
+              margin-left: 10px;
+              border-radius: $bradius;
+              background-color: $buttonColor;
+              @include bgRepeat;
+              &:hover {
+                color: $white;
+                cursor: pointer;
+                background: linear-gradient(to top,#161616 0%,rgba(22,22,22,0) 100%);
+                background-repeat: no-repeat;
+                margin: 0 1rem;
+
+              }
+              .box_name {
+                p {
+                  margin: 1rem;
+                  color: $hover;
+                  &:hover {
+                    color: $white;
+                  }
+                }
+              }
+            }
+        }
+    }
+    
+    
+}
